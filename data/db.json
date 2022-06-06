@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "Opening Party!",
+      "body": "Why do we use it?\nIt is along extablished fact that a reader will distracted...",
+      "author": "yoshi",
+      "id": 2
+    },
+    {
+      "title": "harry Porter",
+      "body": "hj.hkhkh",
+      "author": "Mario",
+      "id": 9
+    },
+    {
+      "title": "The Legend of the Seeker",
+      "body": "This is a story of a man who was loved by a woman ho always wore white.",
+      "author": "Yoshi",
+      "id": 10
+    }
+  ]
+}
