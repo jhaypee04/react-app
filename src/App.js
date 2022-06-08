@@ -1,25 +1,19 @@
-// import {useState} from 'react';
-import Header from './Header'
-
+import {useState} from 'react';
+import List from './List'
+import data from './data'
 function App() {
-  const message = "Welcome to react";
-  const arr = [ "Ford", "Benz", "Chevrolet"];
-  const obj = {
-    id: 1,
-    name: "Sarah",
-    school: "Loctech",
-    advice: "Study hard for better result"
+  const [people, setPeople] = useState(data);
+  const clearAll =()=>{
+    setPeople([]);
   }
   return (
       <>
-        <Header 
-          message={message} 
-          arr = { arr }
-          obj={obj}
-          />
+        <div className="container">
+          <h3>{people.length} Birthdays Today</h3>
+          <List people={people}/>
+          <button onClick={clearAll}>Clear All</button>
+        </div>
       </>
-      
-    
     );
 }
 
