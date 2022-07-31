@@ -1,0 +1,51 @@
+body{
+    background-color:rgb(255, 255, 255);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+h1,h2,h3,h4,h5,h6,button{
+    text-transform: capitalize;
+}
+.navbar_container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f2f2f2;
+}
+.navbar_container .links {
+    margin-left: auto;
+}
+.navbar_container h1 {
+    color: #f1356d;
+}
+.navbar_container a {
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
+    color: black;
+}
+.navbar_container a:hover {
+    color: #f1356d
+}
+.content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* blog preview / list */
+.blog-preview {
+    padding: 10px 16px;
+    margin: 20px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+    box-shadow: 1px 3px 5px rgb(0,0,0,0.1);
+}
+.blog-preview h2 {
+    font-size: 20px;
+    color: #f1356d;
+    margin-bottom: 8px;
+}

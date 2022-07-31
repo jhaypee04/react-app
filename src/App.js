@@ -1,19 +1,10 @@
-import {useState} from 'react';
-import List from './List'
-import data from './data'
+import Dashboard from './components/dashboard/Dashboard'
+
 function App() {
-  const [people, setPeople] = useState(data);
-  const clearAll =()=>{
-    setPeople([]);
-  }
   return (
-      <>
-        <div className="container">
-          <h3>{people.length} Birthdays Today</h3>
-          <List people={people}/>
-          <button onClick={clearAll}>Clear All</button>
-        </div>
-      </>
+      <div className="app_container">
+        <Dashboard />
+      </div>
     );
 }
 

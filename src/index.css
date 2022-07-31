@@ -1,36 +1,95 @@
-body{
-    background-color: rgb(250, 91, 216);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: Black;
+/* .nav{
+    background-color: red;
+} */
+.nav span{
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: overline;
 }
-.container{
-    background-color: white;
-    width: 50%;
-    margin: 200px auto;
+.tabs{
+    width: 80%;
+    height: 400px;
+    margin: 5px;
+    border: 3px solid rgb(115, 115, 196);
+}
+
+/* Weeks Tab */
+#tab1 header{
+    width: 100%;
+    height:auto;
+    background-color: aqua;
     padding: 5px;
-    text-align: center;
-    border-radius: 5px;
+    box-sizing: border-box;
 }
-article{
-    display: flex;
+#tab1 main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#tab1 aside{
+    /* background-color: yellowgreen; */
+    height:fit-content;
+}
+#tab1 section{
+    /* background-color: rgb(205, 138, 50); */
+    height:fit-content;
+    border-left: 1px solid #555;
+    padding-left: 5px;
+}
+#tab1 .day{
+    box-sizing: border-box;
     margin: 15px 0;
 }
-img{
-    width:50%;
-    height: 200px;
-    border-radius: 50%;
+#tab1 .day-header{
+    width: 100%;
+    height:auto;
+    background-color: rgb(187, 168, 0);
+    padding: 5px;
+    box-sizing: border-box;
 }
-button{
-    border: 0;
-    padding:10px;
-    width:40%;
-    background-color:rgb(250, 91, 216) ;
-    color:white;
-    text-shadow: 0px 1px 2px black;
+
+/* Modules Tab */
+#tab2 header{
+    width: 100%;
+    height:auto;
+    background-color: aqua;
+    padding: 5px;
+    box-sizing: border-box;
 }
-button:hover{
-    background-color: pink;
+main{
+    margin:2.5%;
+    width: 95%;
 }
-button:active{
-    background-color: rgb(252, 155, 255);
+.accordion_container{
+    margin: 5px 0;
+}
+.day_and_module_header{
+    background-color: blanchedalmond;
+    padding: 5px;
+    text-align: center;
+}
+.accordion_hidden{
+    display: none;
+}
+.day_and_module_container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 5px 0;
+    gap: 5px;
+}
+#tab2 aside{
+    background-color:aquamarine ;
+}
+#tab2 section{
+    background-color:rgb(127, 129, 255) ;
+}
+
+/* Student Tabs */
+.accordion_hidden_student{
+    display: none;
+}
+.student_other_details{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 5px 0;
+    gap: 5px;
 }
