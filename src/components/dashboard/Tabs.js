@@ -5,7 +5,7 @@ import Week from "./weeks/Week";
 
 
 const Tabs = ({ tabToggler }) => {
-    console.log(tabToggler)
+    // console.log(tabToggler)
     return (
         <>
             { tabToggler === 'tab1' && <Week id="tab1"/>}

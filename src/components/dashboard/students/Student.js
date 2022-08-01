@@ -4,7 +4,7 @@ const Student = () => {
     return ( 
         <>
             <div>
-                <div className="tabs">
+                <div id="tab4" className="tabs">
                     <header>
                         Students Tab
                     </header>

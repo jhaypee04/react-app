@@ -1,23 +1,19 @@
 const Navdb = [
     {
         id: 'tab1',
-        tabName: 'Weeks',
-        tabLink: '#tab1'
+        tabName: 'Weeks'
     },
     {
         id: 'tab2',
-        tabName: 'Modules Registry',
-        tabLink: '#tab2'
+        tabName: 'Modules Registry'
     },
     {
         id: 'tab3',
-        tabName: 'Attendance',
-        tabLink: '#tab3'
+        tabName: 'Attendance'
     },
     {
         id: 'tab4',
-        tabName: 'Students',
-        tabLink: '#tab4'
+        tabName: 'Students'
     },
 ]
 

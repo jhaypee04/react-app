@@ -1,31 +1,22 @@
-
+import data from '../db/ModulesRegistryDb'
+import Accordion from './Accordion'
 
 const ModulesRegistry = () => {
+    
     return ( 
         <>
             <div>
-                <div className="tabs">
+                <div id="tab2" className="tabs">
                     <header>
                         Modules Tab
                     </header>
                     <main>
-                        <div className="accordion_container">
-                            <div className="day_and_module_header">Week 1</div>
-                            <div className="accordion_hidden">
-                                <div className="day_and_module_container">
-                                    <aside>Monday</aside>
-                                    <section>Module</section>
-                                </div>
-                                <div className="day_and_module_container">
-                                    <aside>Wednesday</aside>
-                                    <section>Module</section>
-                                </div>
-                                <div className="day_and_module_container">
-                                    <aside>Friday</aside>
-                                    <section>Module</section>
-                                </div>
-                            </div>
-                        </div>
+                        { data.map((week) => {
+                            const { no} = week
+                            return (
+                                    <Accordion  key={no} {...week} />
+                                )
+                            })}
                         
                     </main>
                 </div>

@@ -1,20 +1,16 @@
-import { useState } from 'react'
-import Navdb from './db/Navdb'
+import data from './db/Navdb'
 
 const Nav = ({ handleClick }) => {
-    const [ data, setData ] = useState(Navdb)
-    // console.log(data)
-
     return ( 
         <>
             <div className='nav'>
                 { data.map((tab) => {
-                    const { id, tabName, tabLink } = tab
+                    const { id, tabName } = tab
                     return (
                         <span  
-                        key={id} 
-                        className="tab-toggler"
-                        onClick={ (e) => { handleClick(id)}}
+                            key={id} 
+                            className="tab-toggler"
+                            onClick={ () => { handleClick(id)}}
                         >{tabName}</span>
                     )
                 })}
